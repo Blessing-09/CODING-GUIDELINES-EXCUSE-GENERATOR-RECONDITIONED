@@ -18,7 +18,7 @@ let introduction = ['My name is', 'They call me', 'I go by the name', 'Just call
 let namePers =['Wonderwoman', 'Hulk', 'Spiderman', 'Gamora', 'Ironman', 'Catwoman'];
 let action = ['I love to', 'I like to', 'I hate to'];
 let what = ['cook 🍳', 'dance 🪩', 'travel ✈️', 'sleep 😴', 'code 👩‍💻', 'eat 🍽', 'play 🛝', 'read 📖', 'watch movies 🍿', 'listen to music 🎵'];
-let bgColor = ['pink', 'grey', 'black'];
+let bgColor = ['pink', 'grey', 'tomato'];
 let textColor =["white", "blue", "green", "purple"];
  let imageSrc = ["https://i.ibb.co/YTdNjv4r/5eb241180c6dba55cd27d57d6bc34239.jpg", "https://i.ibb.co/WWhYMtRf/878840125767.jpg", "https://i.ibb.co/0pM0RL54/Gamora.webp", "https://i.ibb.co/XxjCGJwt/Iron-Man-AOU-Render.webp", "https://i.ibb.co/Q7pFLY06/spiderman-art-design-icon-vector-600nw-2404385831.webp", "https://i.ibb.co/s9kKwvSM/Wonder-Woman-DC-Comics-Justice-League-Lifesize-Cardboard-Cutout-available-now-at-starstills-73279.jpg"];
 
@@ -48,7 +48,7 @@ window.onload = function() {
       name.innerText = randomGreeting;
       excuse.style.backgroundColor = randomColor;
       excuse.style.color = randomTextColor;
-      excuse.innerText= `${randomIntroduction} ${randomName}. ${randomAction} ${randomWhat}`;
+      excuse.innerHTML= `${randomIntroduction} <h5 style="color:black; display:inline;">${randomName}⚡️.</h5> ${randomAction} ${randomWhat}`;
       image.src = randomImage;
       
       // The if condition creates a match between each character and their name. If that happens, an alert is shown and the match is displayed after clicking the "ok"
