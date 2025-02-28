@@ -25,12 +25,14 @@ let textColor =["white", "blue", "green", "purple"];
 // Window function 
 window.onload = function() {
   //When the window loads, the button2 is hidden, to be used later. We can only make use of the button1
+  
   image.src = "https://i.ibb.co/20QcB9pW/Its-Game-Time.jpg";
   button2.style.display = "none";
   button1.addEventListener('click', function () {
     //When the button1 is clicked, the button2 is shown, and the initial text is hidden
     image.src = "https://i.ibb.co/MDL5XBzn/start.png";
     text.style.display = "none";
+    
     excuse.textContent = "On your mark...get set... ⬇";
     button2.style.display = "inline-block";
     button2.addEventListener('click', function () {

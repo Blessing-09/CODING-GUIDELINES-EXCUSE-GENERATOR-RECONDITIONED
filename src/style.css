@@ -10,6 +10,7 @@ body{
 #button1{
     transform: scale(0.9, 0.9);
     border: 10px groove #12e6ed;
+    background-image: radial-gradient(rgb(157, 16, 16) 50%, green);
 }
 #button1:active{
     transform: scale(0.9, 0.9);
@@ -32,6 +33,11 @@ body{
     border-radius: 50%;
 }
 
+.header {
+    background-image: repeating-conic-gradient(red 10%, yellow 20%);
+    border-radius: 50%;
+}
+
 /* #name {
     background-image: conic-gradient(red, green, yellow);
     border: 5px ridge #12e6ed;
@@ -39,6 +45,7 @@ body{
     width: 100px;
     height: 100px;
 } */
+
 
 .alert {
     border-radius: 50%;
