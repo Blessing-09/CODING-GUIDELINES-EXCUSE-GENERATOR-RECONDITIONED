@@ -1,5 +1,26 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: white; 
+   
+}
+#button1:active{
+    transform: scale(1, 1);
+    border: 3px groove #12e6ed;
+}
+#button1:hover{
+    transform: scale(1, 1);
+    background-image: linear-gradient( #0090f6, #5f3eab);
+}
+#button2{
+    transform: scale(1, 1);
+    background-image: linear-gradient( #0090f6, #ab3e8e);
+    border-radius: 50%;
+    width: 90px;
+    height: 80px;
+}
+#button2:hover{
+    transform: scale(1, 1);
+    background-image: linear-gradient( #f6f600, #ab3e8e);
+    border-radius: 50%;
 }
