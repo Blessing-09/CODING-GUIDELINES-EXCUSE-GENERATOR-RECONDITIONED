@@ -36,8 +36,8 @@ window.onload = function() {
     excuse.textContent = "On your mark...get set... ⬇";
     button2.style.display = "inline-block";
     button2.addEventListener('click', function () {
-      //When the button2 is clicked, the following takes place:
-      // However, for easier manipulation, I have stored the random values generated in a function in variables for easy manipulation
+      //When the button2 is clicked, the following take place:
+      // However, for easier manipulation, I have stored the random values generated in a function in variables
       let randomGreeting = getRandomItem(greeting);
       let randomIntroduction = getRandomItem(introduction);
       let randomName = getRandomItem(namePers);
