@@ -28,13 +28,14 @@ window.onload = function() {
   
   image.src = "https://i.ibb.co/20QcB9pW/Its-Game-Time.jpg";
   button2.style.display = "none";
+  
   button1.addEventListener('click', function () {
     //When the button1 is clicked, the button2 is shown, and the initial text is hidden
     image.src = "https://i.ibb.co/MDL5XBzn/start.png";
     text.style.display = "none";
-    
     excuse.textContent = "On your mark...get set... ⬇";
     button2.style.display = "inline-block";
+
     button2.addEventListener('click', function () {
       //When the button2 is clicked, the following take place:
       // However, for easier manipulation, I have stored the random values generated in a function in variables
@@ -55,16 +56,17 @@ window.onload = function() {
       
       // The if condition creates a match between each character and their name. If that happens, an alert is shown and the match is displayed after clicking the "ok"
       if (
-        (randomName === namePers[0] && randomImage === imageSrc[5])|| 
-        (randomName === namePers[1] && randomImage === imageSrc[0])|| 
-        (randomName === namePers[2] && randomImage === imageSrc[4])|| 
-        (randomName === namePers[3] && randomImage === imageSrc[2])||
-        (randomName === namePers[4] && randomImage === imageSrc[3])|| 
-        (randomName === namePers[5] && randomImage === imageSrc[1])
+        randomName === namePers[0] && randomImage === imageSrc[5]|| 
+        randomName === namePers[1] && randomImage === imageSrc[0]|| 
+        randomName === namePers[2] && randomImage === imageSrc[4]|| 
+        randomName === namePers[3] && randomImage === imageSrc[2]||
+        randomName === namePers[4] && randomImage === imageSrc[3]|| 
+        randomName === namePers[5] && randomImage === imageSrc[1]
       )
+
         {
-          alert('YAY!!!🥳 We found a MATCH!!!! 🎉🥳🎊');
           button2.textContent = "Let's play again!";
+          alert('YAY!!!🥳 We found a MATCH!!!! 🎉🥳🎊');
          }
          else {
           button2.textContent = "SHUFFLE!";
