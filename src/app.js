@@ -73,7 +73,7 @@ function getRandomItem(arr){
         setTimeout(() => {
           $button2.textContent = "Let's play again!";
           alert('YAY!!!🥳 We found a MATCH!!!! 🎉🥳🎊'); 
-        }, 10); // Delay for 2 seconds
+        }, 10); 
       }
       else {
           $button2.textContent = "SHUFFLE!";
